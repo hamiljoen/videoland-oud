@@ -1,0 +1,46 @@
+@use "sass:map";
+
+$types: "light", "dark";
+
+/// Darken or Lighten a specific color with a
+/// specific percentage
+@function shade($type, $c, $percentage) {
+  @if $type == "light" {
+    @return(lighten($c, $percentage));
+  } @else {
+    @return(darken($c, $percentage));
+  }
+}
+
+/// create a set of color shades for each
+/// `style` passed in.
+@function rootColor($type, $key, $style) {
+
+  $color: map.get($style, 'color');
+  $shades: map.get($style, 'shades');
+
+  /// define empty array
+  $e: ();
+
+  /// Base Color
+  /// Will output --bg-primary or --fg-primary
+  $class: "--" + $key + "-" + $type;
+  $e: map.set($e, $class, $color);
+
+  /// Shades
+  @each $t in $types {
+    @each $shade in $shades {
+
+      /// call the shade function above
+      $s: shade($t, $color, $shade);
+
+      /// Will output something like
+      ///  --bg-primary-light-10 or
+      ///  --fg-secondary-dark-50
+      $class: "--" + $key + "-" + $type + "-" + $t + "-" +$shade;
+      $e: map.set($e, $class, $s);
+    }
+  }
+
+  @return($e);
+}

@@ -1,0 +1,18 @@
+{
+  "unit": "rem",
+  "colors": [
+    { "type": "primary", "color": "#F291B5", "shades": [10,20,30,40,50] },
+    { "type": "secondary", "color": "#D95B89", "shades": [10,20,30,40,50] }
+  ],
+  "fonts": [
+    { "type": "main-text-regular", "uri": "'../fonts/font'", "sizes": [10,12,14,16,18,20,22] },
+    { "type": "main-text-medium", "uri": "'../fonts/font'", "sizes": [10,12,14,16,18,20,22] },
+    { "type": "main-text-bold", "uri": "'../fonts/font'", "sizes": [10,12,14,16,18,20,22]},
+    { "type": "heading", "uri":  "'../fonts/font-heading'", "sizes": [10,12,14,16,18,20,22]}
+  ],
+  "spacing": {
+    "small": 1,
+    "medium": 2,
+    "large": 3
+  }
+}
