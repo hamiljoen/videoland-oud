@@ -10,20 +10,24 @@ $tokens: (
     shades: (10, 20, 30, 40, 50)
   )),
   fonts: ((
-    type: main-text-regular,
-    uri: '../fonts/font',
+    type: bebasneue-regular,
+    uri: '../fonts/bebasneue-regular',
     sizes: (10, 12, 14, 16, 18, 20, 22)
   ), (
-    type: main-text-medium,
-    uri: '../fonts/font',
+    type: gotham-medium,
+    uri: '../fonts/gotham-medium',
     sizes: (10, 12, 14, 16, 18, 20, 22)
   ), (
-    type: main-text-bold,
-    uri: '../fonts/font',
+    type: gotham-book,
+    uri: '../fonts/gotham-book',
     sizes: (10, 12, 14, 16, 18, 20, 22)
   ), (
-    type: heading,
-    uri: '../fonts/font-heading',
+    type: gotham-bold,
+    uri: '../fonts/gotham-bold',
+    sizes: (10, 12, 14, 16, 18, 20, 22)
+  ), (
+    type: gotham-black,
+    uri: '../fonts/gotham-black',
     sizes: (10, 12, 14, 16, 18, 20, 22)
   )),
   spacing: (
