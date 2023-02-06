@@ -1,46 +1,24 @@
-/** FONTS **/
-@each $entry in $fonts {
-  $type: map-get($entry, "type");
-  $uri: map-get($entry, "uri");
-
-  /*! heading */
-  @font-face {
-    font-family: "bebasneue-regular";
-    src: url("../../fonts/bebasneue-regular.woff2") format("woff2"),
-    url("../../fonts/bebasneue-regular.woff") format("woff"),
-    url("../../fonts/bebasneue-regular.ttf") format("ttf");
+@each $style in $fonts {
+  $type: map-get($style, 'type');
+  @each $s in map-get($style, 'sizes') {
+    $v: $type + '-' + $s;
+    $var: '--' + $v;
+    .#{$v} {
+      font-family: quote($type);
+      //font-size: pxToRem($s);
+      font-size: var(unquote($var));
+    }
   }
+}
 
-  /*! main-text-medium */
-  @font-face {
-    font-family: "gotham-medium";
-    src: url("../../fonts/gotham-medium.woff2") format("woff2"),
-    url("../../fonts/gotham-medium.woff") format("woff"),
-    url("../../fonts/gotham-medium.ttf") format("ttf");
-  }
+.text-align-left {
+  text-align: left;
+}
 
-  /*! main-text-regular */
-  @font-face {
-    font-family: "gotham-book";
-    src: url("../../fonts/gotham-book.woff2") format("woff2"),
-    url("../../fonts/gotham-book.woff") format("woff"),
-    url("../../fonts/gotham-book.ttf") format("ttf");
-  }
+.text-align-center {
+  text-align: center;
+}
 
-  /*! main-text-bold */
-  @font-face {
-    font-family: "gotham-bold";
-    src: url("../../fonts/gotham-bold.woff2") format("woff2"),
-    url("../../fonts/gotham-bold.woff") format("woff"),
-    url("../../fonts/gotham-bold.ttf") format("ttf");
-  }
-
-  /*! main-text-black */
-  @font-face {
-    font-family: "gotham-black";
-    src: url("../../fonts/gotham-black.woff2") format("woff2"),
-    url("../../fonts/gotham-black.woff") format("woff"),
-    url("../fonts/gotham-black.ttf") format("ttf");
-  }
-
+.text-align-right {
+  text-align: right;
 }
