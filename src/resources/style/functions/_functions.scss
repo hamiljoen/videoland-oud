@@ -42,5 +42,30 @@ $types: "light", "dark";
     }
   }
 
+  @function utilityColor($type, $key, $style) {
+
+    $type: map.get($style, 'type');
+    $color: map.get($style, 'color');
+    $shades: map.get($style, 'shades');
+
+    $e: ();
+
+    /// Base Color
+    $class: "." + $key + "-" + $type;
+    $var: "var(--" + $key + "-" + $type + ")";
+    $e: map.set($e, $class, $var);
+
+    /// Shades
+    @each $t in $types {
+      @each $shade in $shades {
+        $class: "." + $key + "-" + $type + "-" + $t + "-"+ $shade;
+        $var: "var(--" + $key + "-" + $type + "-" + $t + "-" + $shade + ")";
+        $e: map.set($e, $class, $var);
+      }
+    }
+
+  @return($e);
+}
+
   @return($e);
 }
