@@ -10,6 +10,7 @@
     url("../../fonts/bebasneue-regular.woff") format("woff"),
     url("../../fonts/bebasneue-regular.ttf") format("ttf");
   }
+
   /*! main-text-medium */
   @font-face {
     font-family: "gotham-medium";
@@ -17,13 +18,15 @@
     url("../../fonts/gotham-medium.woff") format("woff"),
     url("../../fonts/gotham-medium.ttf") format("ttf");
   }
-  /*! main-text-regular */npm
+
+  /*! main-text-regular */
   @font-face {
     font-family: "gotham-book";
     src: url("../../fonts/gotham-book.woff2") format("woff2"),
     url("../../fonts/gotham-book.woff") format("woff"),
     url("../../fonts/gotham-book.ttf") format("ttf");
   }
+
   /*! main-text-bold */
   @font-face {
     font-family: "gotham-bold";
