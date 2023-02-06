@@ -1,14 +1,23 @@
 $tokens: (
   unit: rem,
-  colors: ((
-    type: primary,
-    color: #F291B5,
-    shades: (10, 20, 30, 40, 50)
-  ), (
-    type: secondary,
-    color: #D95B89,
-    shades: (10, 20, 30, 40, 50)
+        colors: ((
+                type: primary,
+                color: #F53647,
+                shades: (10, 20, 30, 40, 50)
+        ), (
+                type: secondary,
+                color: #111,
+                shades: (10, 20, 30, 40, 50)
+        ), (
+                type: light-grey,
+                color: #555,
+                shades: (10, 20, 30, 40, 50)
+        ), (
+                type: dark-grey,
+                color: #212522,
+                shades: (10, 20, 30, 40, 50)
   )),
+
   fonts: ((
     type: bebasneue-regular,
     uri: '../fonts/bebasneue-regular',
