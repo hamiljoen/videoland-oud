@@ -1,0 +1,16 @@
+.Button {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.gotham-medium-16 {
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-14);
+}
