@@ -1,36 +1,39 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-/// TODO: Define props for Kijklijst
-const Kijklijst = (props) => {
+const Kijklijst = ({ text,
+                     exceptionType = "",
+                     additionalClasses, testID}) => {
+
+    const utils = ["Kijklijst", ...additionalClasses || []].join(" ")
+    const exType = exceptionType ?? ""
 
     return(
-        <div data-testid={ props.testID }
-             data-object-type={ props.type ?? ""}
-             className={ `Kijklijst ${props.size} more utility classes` }>
-        </div>
+        <button data-testid={ testID }
+                data-type={exType}
+                className={ utils }>
+            { text }
+        </button>
     )
 
 }
 
-/// TODO: add more utility classes if needed!
-
-/// TODO: Adjust and extend!
-const sizes = [
-    "small",
-    "medium",
-    "large"
+/// TODO: Adjust!
+const utilityClasses = [
+    "x",
+    "y"
 ]
 
+/// TODO: Adjust
 const exceptionClasses = [
-    "button",
-    "regular"
+    "x",
+    "y"
 ]
 
 Kijklijst.propTypes = {
     testID: PropTypes.string,
-    type: PropTypes.oneOf(exceptionClasses),
-    size: PropTypes.oneOf(sizes),
+    exceptionType: PropTypes.oneOf(exceptionClasses),
+    utilityClasses: PropTypes.arrayOf(PropTypes.oneOf(utilityClasses)),
 }
 
 export default Kijklijst

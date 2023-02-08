@@ -1,25 +1,24 @@
 import React from 'react'
 import Episode from './Episode'
 
-/// TODO: fix story entries
 const EpisodeMeta = {
     title: "atoms/Episode",
     component: Episode,
     argTypes: {
         testID: { table: { disable: true } },
-        size: { name: "Size" },
-        type: { name: "Type"}
+        utilityClasses: { name: "Utility Classes" },
+        exceptionType: { name: "Exception Type"}
     }
 }
 
-const testID = "Episode-" + Math.floor(Math.random() * 90000) + 10000
+const testID = "Button-" + Math.floor(Math.random() * 90000) + 10000
 const Template = (args) => <Episode {...args} />
 
-export const DefaultEpisode = Template.bind({})
-DefaultEpisode.args = {
+export const DefaultButton = Template.bind({})
+DefaultButton.args = {
+    text: "Aflevering",
     testID: testID,
-    size: "medium",
-    type: "regular"
+    utilityClasses: []
 }
 
 export default EpisodeMeta

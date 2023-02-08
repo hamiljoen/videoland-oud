@@ -1,36 +1,20 @@
-import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
-/// TODO: Define props for Label
-const Label = (props) => {
+const Label = ({ label, color }) => {
+
+    const style = {
+        color: color === "muted" ? "rgba(0,0,0,0.5)" : "#000"
+    }
 
     return(
-        <div data-testid={ props.testID }
-             data-object-type={ props.type ?? ""}
-             className={ `Label ${props.size} more utility classes` }>
-        </div>
+        <div className="Label" style={ style }>{ label }</div>
     )
 
 }
 
-/// TODO: add more utility classes if needed!
-
-/// TODO: Adjust and extend!
-const sizes = [
-    "small",
-    "medium",
-    "large"
-]
-
-const exceptionClasses = [
-    "button",
-    "regular"
-]
-
 Label.propTypes = {
-    testID: PropTypes.string,
-    type: PropTypes.oneOf(exceptionClasses),
-    size: PropTypes.oneOf(sizes),
+    label: PropTypes.string,
+    color: PropTypes.oneOf(["black", "muted"])
 }
 
 export default Label

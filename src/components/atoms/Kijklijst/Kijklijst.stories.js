@@ -1,14 +1,13 @@
 import React from 'react'
 import Kijklijst from './Kijklijst'
 
-/// TODO: fix story entries
 const KijklijstMeta = {
     title: "atoms/Kijklijst",
     component: Kijklijst,
     argTypes: {
         testID: { table: { disable: true } },
-        size: { name: "Size" },
-        type: { name: "Type"}
+        utilityClasses: { name: "Utility Classes" },
+        exceptionType: { name: "Exception Type"}
     }
 }
 
@@ -17,9 +16,9 @@ const Template = (args) => <Kijklijst {...args} />
 
 export const DefaultKijklijst = Template.bind({})
 DefaultKijklijst.args = {
+    text: "Kijklijst",
     testID: testID,
-    size: "medium",
-    type: "regular"
+    utilityClasses: []
 }
 
 export default KijklijstMeta

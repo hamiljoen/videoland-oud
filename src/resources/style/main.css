@@ -677,4 +677,119 @@
   text-align: right;
 }
 
+.Label {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px;
+}
+
+.Button {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.gotham-medium-16 {
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-14);
+}
+
+.Logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2000;
+  width: 20%;
+  height: auto;
+}
+.Button {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.gotham-medium-16 {
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-14);
+}
+
+.Label {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px;
+}
+
+.Label {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px;
+}
+
+.Episode {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.Kijklijst {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.Button {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.gotham-medium-16 {
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-14);
+}
+
+.Button {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.gotham-medium-16 {
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-14);
+}
+
 /*# sourceMappingURL=main.css.map */
