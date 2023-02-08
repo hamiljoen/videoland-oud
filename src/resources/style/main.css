@@ -734,6 +734,18 @@
   margin: 2px;
 }
 
+.Search {
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
 .Episode {
   width: 100px;
   height: 40px;

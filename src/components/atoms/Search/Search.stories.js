@@ -1,14 +1,13 @@
 import React from 'react'
 import Search from './Search'
 
-/// TODO: fix story entries
 const SearchMeta = {
     title: "atoms/Search",
     component: Search,
     argTypes: {
         testID: { table: { disable: true } },
-        size: { name: "Size" },
-        type: { name: "Type"}
+        utilityClasses: { name: "Utility Classes" },
+        exceptionType: { name: "Exception Type"}
     }
 }
 
@@ -17,9 +16,9 @@ const Template = (args) => <Search {...args} />
 
 export const DefaultSearch = Template.bind({})
 DefaultSearch.args = {
+    text: "Zoeken",
     testID: testID,
-    size: "medium",
-    type: "regular"
+    utilityClasses: []
 }
 
 export default SearchMeta

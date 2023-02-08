@@ -1,30 +1,11 @@
 .Search {
-
-
-
-  // XS - Phone
-  @media (max-width: 480px) {
-
-  }
-
-  // S - Tablet
-  @media (max-width: 768px) {
-
-  }
-
-  // M - Tablet/Laptop
-  @media (max-width: 1024px) {
-
-  }
-
-  // L - High Res
-  @media (max-width: 1200px) {
-
-  }
-
-  // XL - Ultra High Res
-  @media (min-width: 1201px) {
-
-  }
-
+  width: 100px;
+  height: 40px;
+  font-family: "gotham-book";
+  font-size: var(--gotham-book-10);
+  color: white;
+  background-color: var(--fg-primary);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
