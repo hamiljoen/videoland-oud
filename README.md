@@ -1,5 +1,7 @@
 <img src='src/resources/images/videoland_logo.png' />
 
+<img src='src/resources/images/videoland_preview.png' />
+
 ## Setup
 
 After clone.
