@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "videoland-f8bf8",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
